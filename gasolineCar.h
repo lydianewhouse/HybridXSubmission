@@ -3,7 +3,7 @@
 #include <string>
 #include "car.h"
 
-class GasolineCar : public Car{
+class GasolineCar : virtual public Car{
     public:
         //Remains virtual to allow hybridcar to make own implementation
         virtual std::string Drive() override;
