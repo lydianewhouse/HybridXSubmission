@@ -7,46 +7,52 @@
 //from the appropriate parent class
 std::string HybridCar::Drive()
 {
-    if (this->inElectricMode)
+    /* if (this->inElectricMode)
     {
         return ElectricCar::Drive();
     }
     else
     {
         return GasolineCar::Drive();
-    }
+    } */
+
+    return "Drive HybridCar";
     
 }
 
 double HybridCar::FuelEfficiency()
 {
-    if (this->inElectricMode)
+    /* if (this->inElectricMode)
     {
         return ElectricCar::FuelEfficiency();
     }
     else
     {
         return GasolineCar::FuelEfficiency();
-    }
+    } */
     
+
+    return 10;
 }
 
 std::string HybridCar::ChargeBattery()
 {
-    if (this->inElectricMode)
+    /* if (this->inElectricMode)
     {
         return ElectricCar::ChargeBattery();
     }
     else
     {
         return GasolineCar::ChargeBattery();
-    }
+    } */
     
+    return "ChargeBattery HybridCar";
+
 }
 
 std::string HybridCar::Refuel()
 {
-    if (this->inElectricMode)
+    /* if (this->inElectricMode)
     {
         return ElectricCar::Refuel();
     }
@@ -54,7 +60,9 @@ std::string HybridCar::Refuel()
     {
         return GasolineCar::Refuel();
     }
-    
+     */
+
+    return "Refuel HybridCar";
 }
 
 
