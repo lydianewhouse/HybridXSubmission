@@ -6,10 +6,6 @@
 
 class HybridCar : public ElectricCar, public GasolineCar
 {
-    private:
-        //Mode to specify which parent function to use
-        //Defuault will use electricCar derivation
-        bool inElectricMode = true;
     public:
         //No need for virtual since final derived class
         std::string Drive() override;
