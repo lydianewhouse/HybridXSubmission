@@ -6,10 +6,11 @@ class Car
 {
     public:
         //Virtual functions all cars will use
-        virtual std::string Drive();
-        virtual double FuelEfficiency();
-        virtual std::string ChargeBattery();
-        virtual std::string Refuel();
+        //Also pure since car is an abstract class
+        virtual std::string Drive() = 0;
+        virtual double FuelEfficiency() = 0;
+        virtual std::string ChargeBattery() = 0;
+        virtual std::string Refuel() = 0;
 
         //Pure virtual since will only be used by HybridCar
         virtual std::string SwitchMode() = 0;
